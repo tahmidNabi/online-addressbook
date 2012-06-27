@@ -23,7 +23,7 @@ public interface VCardService {
 
     public VCard getVCardById(int vCardId);
 
-    public void deleteVCard(VCard vCard);
+    public void deleteVCard(VCard vCard, User user);
 
     public void updateVCard(VCard vCard);
 

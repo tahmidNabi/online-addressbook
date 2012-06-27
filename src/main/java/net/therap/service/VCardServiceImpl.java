@@ -12,8 +12,6 @@ import net.therap.utility.VCardImporter;
 import org.apache.log4j.Logger;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.util.Date;
 import java.util.List;
 
@@ -24,7 +22,7 @@ import java.util.List;
  * Time: 12:21 PM
  * To change this template use File | Settings | File Templates.
  */
-public class VCardServiceImpl implements VCardService{
+public class VCardServiceImpl implements VCardService {
 
     protected final Logger logger = Logger.getLogger(this.getClass());
 
@@ -88,8 +86,10 @@ public class VCardServiceImpl implements VCardService{
         return vCard;
     }
 
-    public void deleteVCard(VCard vCard) {
-        vCardDao.deleteVCard(vCard);
+    public void deleteVCard(VCard vCard, User user) {
+        if (vCard.getOwningUser().getUserId() == user.getUserId()) {
+            vCardDao.deleteVCard(vCard);
+        }
     }
 
     public void updateVCard(VCard vCard) {
@@ -106,10 +106,10 @@ public class VCardServiceImpl implements VCardService{
     public List<VCard> getVCardsByName(SearchCmd searchCmd, User user) {
         String searchedName = searchCmd.getName();
 
-        return vCardDao.getVCardsByName(searchedName,user);
+        return vCardDao.getVCardsByName(searchedName, user);
     }
 
-    public void importVCard(User user, ImportCmd importCmd) throws Exception{
+    public void importVCard(User user, ImportCmd importCmd) throws Exception {
 
         MultipartFile importedVCardFile = importCmd.getFile();
 
@@ -119,7 +119,7 @@ public class VCardServiceImpl implements VCardService{
 
         user = userDao.getUserById(user.getUserId());
 
-        byte [] bytes = new byte[(int) importedVCardFile.getSize()];
+        byte[] bytes = new byte[(int) importedVCardFile.getSize()];
 
         importedVCardFile.getInputStream().read(bytes);
 

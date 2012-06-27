@@ -1,5 +1,6 @@
 package net.therap.controller;
 
+import net.therap.domain.User;
 import net.therap.domain.VCard;
 import net.therap.service.VCardService;
 import org.springframework.ui.ModelMap;
@@ -11,6 +12,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by IntelliJ IDEA.
@@ -41,12 +43,15 @@ public class VCardController extends SimpleFormController {
     protected ModelAndView onSubmit(HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) throws Exception {
         VCard vCard = (VCard) command;
 
+        HttpSession session = request.getSession();
+        User user = (User) session.getAttribute("User");
+
         String isDelete = ServletRequestUtils.getStringParameter(request, "delete", null);
         String isUpdate = ServletRequestUtils.getStringParameter(request,"update",null);
         String isExport = ServletRequestUtils.getStringParameter(request,"export",null);
 
         if (isDelete != null) {
-            vCardService.deleteVCard(vCard);
+            vCardService.deleteVCard(vCard, user);
 
 
 
