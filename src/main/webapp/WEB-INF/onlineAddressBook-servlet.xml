@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
+    <bean id="userRegistrationController" class="net.therap.controller.RegistrationController">
+        <property name="userService" ref="userService"/>
+        <property name="commandName" value="registrationCmd"/>
+        <property name="commandClass" value="net.therap.command.RegistrationCmd"/>
+        <property name="formView" value="UserRegistration"/>
+        <property name="successView" value="Login"/>
+    </bean>
+
+    <bean id="loginController" class="net.therap.controller.LoginController">
+        <property name="sessionForm" value="true"/>
+        <property name="userService" ref="userService"/>
+        <property name="commandName" value="loginCmd"/>
+        <property name="commandClass" value="net.therap.command.LoginCmd"/>
+        <property name="formView" value="Login"/>
+        <property name="successView" value="Welcome"/>
+    </bean>
+
+    <bean id="newVCardController" class="net.therap.controller.NewVCardController">
+        <property name="vCardService" ref="vCardService"/>
+        <property name="commandName" value="vCardCmd"/>
+        <property name="commandClass" value="net.therap.command.VCardCmd"/>
+        <property name="formView" value="AddNewVCard"/>
+        <property name="successView" value="Welcome"/>
+    </bean>
+
+    <bean id="addressBookController" class="net.therap.controller.AddressBookController">
+        <property name="vCardService" ref="vCardService"/>
+    </bean>
+
+    <bean id="vCardController" class="net.therap.controller.VCardController">
+        <property name="vCardService" ref="vCardService"/>
+        <property name="commandName" value="vCard"/>
+        <property name="commandClass" value="net.therap.domain.VCard"/>
+        <property name="formView" value="VCard"/>
+        <property name="successView" value="Welcome"/>
+    </bean>
+
+    <bean id="updateVCardController" class="net.therap.controller.UpdateVCardController">
+        <property name="vCardService" ref="vCardService"/>
+        <property name="commandName" value="vCard"/>
+        <property name="commandClass" value="net.therap.domain.VCard"/>
+        <property name="formView" value="UpdateVCard"/>
+        <property name="successView" value="Welcome"/>
+    </bean>
+
+    <bean id="downloadController" class="net.therap.controller.DownloadVCardController"/>
+
+    <bean id="searchController" class="net.therap.controller.SearchController">
+        <property name="vCardService" ref="vCardService"/>
+        <property name="commandName" value="searchCmd"/>
+        <property name="commandClass" value="net.therap.command.SearchCmd"/>
+        <property name="formView" value="Search"/>
+        <property name="successView" value="SearchResults"/>
+    </bean>
+
+    <bean id="importVCardController" class="net.therap.controller.ImportVCardController">
+        <property name="vCardService" ref="vCardService"/>
+        <property name="commandName" value="importCmd"/>
+        <property name="commandClass" value="net.therap.command.ImportCmd"/>
+        <property name="formView" value="ImportVCard"/>
+        <property name="successView" value="Welcome"/>
+    </bean>
+
+    <bean id="logoutController" class="net.therap.controller.LogoutController"/>
+
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping" id="simpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/Register.html">userRegistrationController</prop>
+                <prop key="/Login.html">loginController</prop>
+                <prop key="/AddNewVCard.html">newVCardController</prop>
+                <prop key="/Addressbook.html">addressBookController</prop>
+                <prop key="/VCard.html">vCardController</prop>
+                <prop key="/UpdateVCard.html">updateVCardController</prop>
+                <prop key="/Download.html">downloadController</prop>
+                <prop key="/Search.html">searchController</prop>
+                <prop key="/ImportVCard.html">importVCardController</prop>
+                <prop key="/Logout.html">logoutController</prop>
+            </props>
+        </property>
+    </bean>
+
+
+    <bean id="userService" class="net.therap.service.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="vCardService" class="net.therap.service.VCardServiceImpl">
+        <property name="vCardDao" ref="vCardDao"/>
+        <property name="userDao" ref="userDao"/>
+        <property name="vCardExporter" ref="vCardExporter"/>
+        <property name="vCardImporter" ref="vCardImporter"/>
+    </bean>
+
+    <bean id="vCardExporter" class="net.therap.utility.VersionFourVCardExporter"/>
+
+    <bean id="vCardImporter" class="net.therap.utility.VersionFourVCardImporter"/>
+
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="messages_en_US"/>
+    </bean>
+</beans>
