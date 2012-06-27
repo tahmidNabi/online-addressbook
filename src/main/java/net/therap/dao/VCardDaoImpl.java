@@ -25,7 +25,7 @@ public class VCardDaoImpl extends HibernateDaoSupport implements VCardDao{
 
         Session session = getSession();
         session.saveOrUpdate(vCard);
-        session.flush();
+
 
     }
 
@@ -34,6 +34,7 @@ public class VCardDaoImpl extends HibernateDaoSupport implements VCardDao{
        Session session = getSession();
 
        session.delete(vCard);
+
        session.flush();
 
 
@@ -50,7 +51,7 @@ public class VCardDaoImpl extends HibernateDaoSupport implements VCardDao{
 
         Session session = getSession();
         session.merge(vCard);
-        session.flush();
+
 
     }
 

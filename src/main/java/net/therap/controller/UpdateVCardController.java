@@ -42,7 +42,7 @@ public class UpdateVCardController extends SimpleFormController{
     protected ModelAndView onSubmit(HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) throws Exception {
 
         VCard vCard = (VCard) command;
-        logger.info("Name: " + vCard.getName() + "Phto: " + vCard.getPhoto());
+        logger.info("Name: " + vCard.getName() + "Photo: " + vCard.getPhoto());
 
         vCardService.updateVCard(vCard);
 

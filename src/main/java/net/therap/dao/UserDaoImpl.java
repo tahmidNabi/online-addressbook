@@ -35,7 +35,7 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao{
 
         Session session = getSession();
         session.saveOrUpdate(user);
-        session.flush();
+
 
 
     }

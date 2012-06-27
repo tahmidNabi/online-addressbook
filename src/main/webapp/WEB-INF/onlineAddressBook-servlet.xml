@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
@@ -11,12 +18,32 @@
 
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="import*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut id="transactionPointCut" expression="execution(* net.therap.service.*ServiceImpl.*(..))"/>
+        <aop:advisor advice-ref="transactionAdvice" pointcut-ref="transactionPointCut"/>
+    </aop:config>
+
     <bean id="userRegistrationController" class="net.therap.controller.RegistrationController">
         <property name="userService" ref="userService"/>
         <property name="commandName" value="registrationCmd"/>
         <property name="commandClass" value="net.therap.command.RegistrationCmd"/>
         <property name="formView" value="UserRegistration"/>
         <property name="successView" value="Login"/>
+        <property name="validator" ref="registrationValidator"/>
     </bean>
 
     <bean id="loginController" class="net.therap.controller.LoginController">
@@ -26,6 +53,7 @@
         <property name="commandClass" value="net.therap.command.LoginCmd"/>
         <property name="formView" value="Login"/>
         <property name="successView" value="Welcome"/>
+        <property name="validator" ref="loginValidator"/>
     </bean>
 
     <bean id="newVCardController" class="net.therap.controller.NewVCardController">
@@ -34,6 +62,7 @@
         <property name="commandClass" value="net.therap.command.VCardCmd"/>
         <property name="formView" value="AddNewVCard"/>
         <property name="successView" value="Welcome"/>
+        <property name="validator" ref ="vCardEntryValidator"/>
     </bean>
 
     <bean id="addressBookController" class="net.therap.controller.AddressBookController">
@@ -54,6 +83,7 @@
         <property name="commandClass" value="net.therap.domain.VCard"/>
         <property name="formView" value="UpdateVCard"/>
         <property name="successView" value="Welcome"/>
+
     </bean>
 
     <bean id="downloadController" class="net.therap.controller.DownloadVCardController"/>
@@ -108,6 +138,13 @@
     <bean id="vCardExporter" class="net.therap.utility.VersionFourVCardExporter"/>
 
     <bean id="vCardImporter" class="net.therap.utility.VersionFourVCardImporter"/>
+
+
+    <bean id="registrationValidator" class="net.therap.validator.RegistrationValidator"/>
+
+    <bean id="loginValidator" class="net.therap.validator.LoginValidator"/>
+
+    <bean id="vCardEntryValidator" class="net.therap.validator.VCardEntryValidator"/>
 
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
         <property name="basename" value="messages_en_US"/>
