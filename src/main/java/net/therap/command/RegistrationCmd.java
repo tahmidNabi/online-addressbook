@@ -2,7 +2,7 @@ package net.therap.command;
 
 /**
  * Created by IntelliJ IDEA.
- * user: pritom
+ * user: tahmid
  * Date: 6/7/12
  * Time: 12:16 PM
  * To change this template use File | Settings | File Templates.
