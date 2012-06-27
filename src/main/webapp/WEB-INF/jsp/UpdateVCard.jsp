@@ -115,7 +115,7 @@
                         <fmt:message key="addVCard.address"/> :
                     </td>
                     <td>
-                        <form:input path="address"/>
+                        <form:textarea path="address" cols="30" rows="2"/>
                     </td>
 
                     <td>
