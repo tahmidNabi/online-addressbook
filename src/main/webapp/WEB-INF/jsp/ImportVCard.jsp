@@ -29,6 +29,9 @@
                     <td>
                         <input type="file" name="file" />
                     </td>
+                    <td>
+                        <form:errors path="file" cssClass="error"/>
+                    </td>
 
                 </tr>
 

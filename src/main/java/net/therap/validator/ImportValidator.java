@@ -1,5 +1,6 @@
 package net.therap.validator;
 
+import net.therap.command.ImportCmd;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
@@ -13,10 +14,15 @@ import org.springframework.validation.Validator;
 public class ImportValidator implements Validator {
 
     public boolean supports(Class<?> aClass) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return ImportCmd.class.equals(aClass);
     }
 
     public void validate(Object o, Errors errors) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        ImportCmd importCmd = (ImportCmd) o;
+
+        if(importCmd.getFile()==null || importCmd.getFile().getSize() == 0){
+
+            errors.rejectValue("file","required.file");
+        }
     }
 }

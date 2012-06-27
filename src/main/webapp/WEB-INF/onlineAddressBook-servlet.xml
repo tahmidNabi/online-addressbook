@@ -102,6 +102,7 @@
         <property name="commandClass" value="net.therap.command.ImportCmd"/>
         <property name="formView" value="ImportVCard"/>
         <property name="successView" value="Welcome"/>
+        <property name="validator" ref="importValidator"/>
     </bean>
 
     <bean id="logoutController" class="net.therap.controller.LogoutController"/>
@@ -145,6 +146,8 @@
     <bean id="loginValidator" class="net.therap.validator.LoginValidator"/>
 
     <bean id="vCardEntryValidator" class="net.therap.validator.VCardEntryValidator"/>
+
+    <bean id="importValidator" class="net.therap.validator.ImportValidator"/>
 
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
         <property name="basename" value="messages_en_US"/>
