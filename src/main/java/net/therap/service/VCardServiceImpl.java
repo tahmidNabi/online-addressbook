@@ -2,7 +2,6 @@ package net.therap.service;
 
 import net.therap.command.ImportCmd;
 import net.therap.command.SearchCmd;
-import net.therap.command.VCardCmd;
 import net.therap.dao.UserDao;
 import net.therap.dao.VCardDao;
 import net.therap.domain.User;
@@ -47,26 +46,12 @@ public class VCardServiceImpl implements VCardService {
         this.userDao = userDao;
     }
 
-    public void addNewVCard(User user, VCardCmd vCardCmd) {
-
-        VCard vCard = new VCard();
+    public void addNewVCard(User user, VCard vCard) {
 
         vCard.setOwningUser(user);
         vCard.setRev(new Date());
-
-        vCard.setName(vCardCmd.getName());
-        vCard.setFullName(vCardCmd.getFullName());
-        vCard.setOrganization(vCardCmd.getOrganization());
-        vCard.setTitle(vCardCmd.getTitle());
-        vCard.setPhoto(vCardCmd.getPhoto());
-        vCard.setAddress(vCardCmd.getAddress());
-        vCard.setEmail(vCardCmd.getEmail());
-        vCard.setHomeTelephone(vCardCmd.getHomeTelephone());
-        vCard.setOfficeTelephone(vCardCmd.getWorkTelephone());
         vCard.setvCardVersion(4.0f);
-
         vCardDao.addNewVCard(vCard);
-
     }
 
     public List<VCard> getAddressBook(User user) {
@@ -115,6 +100,7 @@ public class VCardServiceImpl implements VCardService {
 
         if (importedVCardFile == null) {
             logger.info("Imported file is null");
+            return;
         }
 
         user = userDao.getUserById(user.getUserId());

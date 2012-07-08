@@ -22,8 +22,8 @@ public class User {
     private List<VCard> addressBook;
 
     @Id
-    @SequenceGenerator(name = "PT_USER_SEQ", sequenceName = "PT_USER_SEQ")
-        @GeneratedValue(strategy = GenerationType.AUTO, generator = "PT_USER_SEQ")
+    @SequenceGenerator(name = "T_ADDRESS_USER_SEQ", sequenceName = "T_ADDRESS_USER_SEQ")
+        @GeneratedValue(strategy = GenerationType.AUTO, generator = "T_ADDRESS_USER_SEQ")
 
     @Column(name = "USER_ID")
     public int getUserId() {

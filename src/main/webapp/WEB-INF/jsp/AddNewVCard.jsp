@@ -17,7 +17,7 @@
     <div class="title"><fmt:message key="addVCard.header"/><%--${game.gameName} khelechen ?--%>
     </div>
     <div class="entry">
-        <form:form method="post" commandName="vCardCmd" action="">
+        <form:form method="post" commandName="vCard" action="">
             <table>
                 <tr class="spaceunder2">
                     <td width="50%">
@@ -102,11 +102,11 @@
                         <fmt:message key="addVCard.officeTelephone"/> :
                     </td>
                     <td>
-                        <form:input path="workTelephone"/>
+                        <form:input path="officeTelephone"/>
                     </td>
 
                     <td>
-                        <form:errors path="workTelephone" cssClass="error"/>
+                        <form:errors path="officeTelephone" cssClass="error"/>
                     </td>
                 </tr>
 

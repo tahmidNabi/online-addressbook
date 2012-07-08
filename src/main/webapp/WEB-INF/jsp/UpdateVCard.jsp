@@ -14,7 +14,7 @@
 <head><title>Simple jsp page</title></head>
 <body>
 <div class="post">
-    <div class="title"><fmt:message key="addVCard.header"/><%--${game.gameName} khelechen ?--%>
+    <div class="title"><fmt:message key="updateVCard.header"/><%--${game.gameName} khelechen ?--%>
     </div>
     <div class="entry">
         <form:form method="post" commandName="vCard" action="">
@@ -141,7 +141,7 @@
             <table>
                 <tr>
                     <td width="50%">
-                        <input type="submit" align="right" value="<fmt:message key="vCard.update"/>" class="nicebutton">
+                        <input type="submit" align="right" value="<fmt:message key="updateVCard.update"/>" class="nicebutton">
                     </td>
                 </tr>
             </table>

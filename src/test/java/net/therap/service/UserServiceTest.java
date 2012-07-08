@@ -3,7 +3,6 @@ package net.therap.service;
 import net.therap.command.LoginCmd;
 import net.therap.dao.UserDao;
 import net.therap.domain.User;
-import net.therap.service.UserServiceImpl;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -58,7 +57,7 @@ public class UserServiceTest extends UnitilsTestNG {
 
         mockUserDao.returns(users).getUsers();
 
-        User user = userService.Authenticate(loginCmd);
+        User user = userService.authenticate(loginCmd);
 
         Assert.assertEquals(users.get(0),user);
 
@@ -74,7 +73,7 @@ public class UserServiceTest extends UnitilsTestNG {
 
         mockUserDao.returns(users).getUsers();
 
-        User user = userService.Authenticate(loginCmd);
+        User user = userService.authenticate(loginCmd);
 
         Assert.assertEquals(null,user);
 
@@ -90,7 +89,7 @@ public class UserServiceTest extends UnitilsTestNG {
 
         mockUserDao.returns(users).getUsers();
 
-        User user = userService.Authenticate(loginCmd);
+        User user = userService.authenticate(loginCmd);
 
         Assert.assertEquals(null,user);
 

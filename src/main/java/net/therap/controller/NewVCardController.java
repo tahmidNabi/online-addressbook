@@ -1,7 +1,7 @@
 package net.therap.controller;
 
-import net.therap.command.VCardCmd;
 import net.therap.domain.User;
+import net.therap.domain.VCard;
 import net.therap.service.VCardService;
 import org.springframework.validation.BindException;
 import org.springframework.web.servlet.ModelAndView;
@@ -30,22 +30,22 @@ public class NewVCardController extends SimpleFormController{
     @Override
     protected Object formBackingObject(HttpServletRequest request) throws Exception {
 
-        VCardCmd vCardCmd = new VCardCmd();
+        VCard vCard = new VCard();
 
-        return vCardCmd;
+        return vCard;
 
     }
 
 
     @Override
     protected ModelAndView onSubmit(HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) throws Exception {
-        VCardCmd vCardCmd = (VCardCmd) command;
+        VCard vCard = (VCard) command;
 
         HttpSession session = request.getSession();
 
         User user = (User) session.getAttribute("User");
 
-        vCardService.addNewVCard(user, vCardCmd);
+        vCardService.addNewVCard(user, vCard);
 
 
         return new ModelAndView(new RedirectView("/online-addressbook/Addressbook.html"));    //To change body of overridden methods use File | Settings | File Templates.

@@ -23,7 +23,8 @@ import java.util.List;
  */
 @DataSet
 @SpringApplicationContext(value = {"classpath:test-applicationContext.xml"})
-public class UserDaoTest extends UnitilsTestNG {
+public class
+        UserDaoTest extends UnitilsTestNG {
 
     @SpringBean("userDao")
     UserDao userDao;

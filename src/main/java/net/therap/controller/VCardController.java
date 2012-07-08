@@ -52,9 +52,6 @@ public class VCardController extends SimpleFormController {
 
         if (isDelete != null) {
             vCardService.deleteVCard(vCard, user);
-
-
-
         }
 
         if(isUpdate !=null) {

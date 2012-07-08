@@ -39,10 +39,6 @@ public class VersionFourVCardImporter implements VCardImporter {
 
         String[] tokens = importedData.split("\n");
 
-        /*System.out.println(name(tokens[2]));
-        System.out.println(fullName(tokens[3]));
-        System.out.println(organization(tokens[4]));
-        */
         vCard.setName(name(tokens[nameTokenIndex]));
         vCard.setFullName(fullName(tokens[fullTokenNameIndex]));
         vCard.setOrganization(organization(tokens[orgTokenIndex]));
@@ -59,9 +55,7 @@ public class VersionFourVCardImporter implements VCardImporter {
     public String name(String importedName) {
 
         String name = importedName.substring(nameStartLocation, importedName.length()-nameEndLocation);
-
         return name;
-
     }
 
     public String fullName(String importedfullName) {

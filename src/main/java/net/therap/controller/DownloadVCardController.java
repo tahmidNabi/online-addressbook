@@ -17,15 +17,15 @@ import javax.servlet.http.HttpServletResponse;
 public class DownloadVCardController extends AbstractController{
 
     @Override
-    protected ModelAndView handleRequestInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
+    protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-        String ExportedVCard = ServletRequestUtils.getStringParameter(httpServletRequest,"exportedVCardString");
-        String fileName = ServletRequestUtils.getStringParameter(httpServletRequest,"name");
+        String ExportedVCard = ServletRequestUtils.getStringParameter(request,"exportedVCardString");
+        String fileName = ServletRequestUtils.getStringParameter(request,"name");
 
-        httpServletResponse.setContentType("text/plain; charset=utf-8");
-        httpServletResponse.setHeader("Content-Disposition", "attachment; filename="+fileName+".vcf");
-        httpServletResponse.getOutputStream().write(ExportedVCard.getBytes());
-        httpServletResponse.getOutputStream().flush();
+        response.setContentType("text/plain; charset=utf-8");
+        response.setHeader("Content-Disposition", "attachment; filename=" + fileName + ".vcf");
+        response.getOutputStream().write(ExportedVCard.getBytes());
+        response.getOutputStream().flush();
 
         return null;
     }

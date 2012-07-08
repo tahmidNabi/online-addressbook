@@ -17,9 +17,9 @@ import javax.servlet.http.HttpSession;
  */
 public class LogoutController implements Controller {
 
-    public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-        HttpSession session = httpServletRequest.getSession();
+        HttpSession session = request.getSession();
         session.removeAttribute("User");
         session.invalidate();
 

@@ -41,7 +41,7 @@
                 </c:url>
                 <tr>
                     <td>
-                        <a href="${displayURL}">${vCard.name}</a>
+                        <a href="${displayURL}">${vCard.fullName}</a>
                     </td>
 
                     <td>

@@ -81,12 +81,12 @@ public class VersionFourVCardExporter extends AbstractVCardExporter{
 
     @Override
     public String exportVersion(float version) {
-        return "VERSION:"+version;  //To change body of implemented methods use File | Settings | File Templates.
+        return "VERSION:"+version;
     }
 
     @Override
     public String Footer() {
-        return "END:VCARD";  //To change body of implemented methods use File | Settings | File Templates.
+        return "END:VCARD";
     }
 }
 

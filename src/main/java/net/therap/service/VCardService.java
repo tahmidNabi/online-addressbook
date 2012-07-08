@@ -2,7 +2,6 @@ package net.therap.service;
 
 import net.therap.command.ImportCmd;
 import net.therap.command.SearchCmd;
-import net.therap.command.VCardCmd;
 import net.therap.domain.User;
 import net.therap.domain.VCard;
 
@@ -17,7 +16,7 @@ import java.util.List;
  */
 public interface VCardService {
 
-    public void addNewVCard(User user, VCardCmd vCardCmd);
+    public void addNewVCard(User user, VCard vCard);
 
     public List<VCard> getAddressBook (User user);
 

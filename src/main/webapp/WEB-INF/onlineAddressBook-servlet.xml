@@ -58,8 +58,8 @@
 
     <bean id="newVCardController" class="net.therap.controller.NewVCardController">
         <property name="vCardService" ref="vCardService"/>
-        <property name="commandName" value="vCardCmd"/>
-        <property name="commandClass" value="net.therap.command.VCardCmd"/>
+        <property name="commandName" value="vCard"/>
+        <property name="commandClass" value="net.therap.domain.VCard"/>
         <property name="formView" value="AddNewVCard"/>
         <property name="successView" value="Welcome"/>
         <property name="validator" ref ="vCardEntryValidator"/>
@@ -83,6 +83,7 @@
         <property name="commandClass" value="net.therap.domain.VCard"/>
         <property name="formView" value="UpdateVCard"/>
         <property name="successView" value="Welcome"/>
+        <property name="validator" ref="vCardEntryValidator"/>
 
     </bean>
 

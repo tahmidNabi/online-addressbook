@@ -23,6 +23,9 @@ public class ImportValidator implements Validator {
         if(importCmd.getFile()==null || importCmd.getFile().getSize() == 0){
 
             errors.rejectValue("file","required.file");
+            return;
         }
+
+
     }
 }

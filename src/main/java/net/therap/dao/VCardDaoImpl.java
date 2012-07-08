@@ -25,25 +25,18 @@ public class VCardDaoImpl extends HibernateDaoSupport implements VCardDao{
 
         Session session = getSession();
         session.saveOrUpdate(vCard);
-
-
     }
 
     public void deleteVCard(VCard vCard) {
 
        Session session = getSession();
-
        session.delete(vCard);
-
        session.flush();
-
-
     }
 
     public VCard getVCardById(int vCardId) {
 
         VCard vCard = getHibernateTemplate().load(VCard.class,vCardId);
-
         return vCard;
     }
 
@@ -51,8 +44,6 @@ public class VCardDaoImpl extends HibernateDaoSupport implements VCardDao{
 
         Session session = getSession();
         session.merge(vCard);
-
-
     }
 
     public List<VCard> getVCardsByName(String name, User user) {

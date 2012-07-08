@@ -17,7 +17,7 @@ public class VCard {
 
     private int vCardId;
     private User owningUser;
-    private String Name;
+    private String name;
     private String fullName;
     private String organization;
     private String title;
@@ -28,7 +28,7 @@ public class VCard {
     private String email;
     private Date rev;
     private float vCardVersion;
-    private int Version;
+    private int version;
 
     @Id
     @SequenceGenerator(name = "T_ADDRESS_VCARD", sequenceName = "T_ADDRESS_VCARD")
@@ -55,11 +55,11 @@ public class VCard {
 
     @Column(name = "V_NAME")
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     @Column(name = "V_FULLNAME")
@@ -147,12 +147,12 @@ public class VCard {
     @Version
     @Column(name = "VERSION")
     public int getVersion() {
-        return Version;
+        return version;
     }
 
 
     public void setVersion(int version) {
-        Version = version;
+        this.version = version;
     }
 
     @Column(name = "VCARD_VERSION")

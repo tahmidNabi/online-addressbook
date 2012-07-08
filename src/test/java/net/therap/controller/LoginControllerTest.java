@@ -45,7 +45,7 @@ public class LoginControllerTest extends UnitilsTestNG {
 
         User user = new User();
 
-        mockUserService.returns(user).Authenticate(loginCmd);
+        mockUserService.returns(user).authenticate(loginCmd);
 
         ModelAndView mv = loginController.handleRequest(request, response);
 	    Assert.assertEquals(successView, mv.getViewName());

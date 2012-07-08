@@ -44,7 +44,7 @@ public abstract class AbstractVCardExporter implements VCardExporter{
         String ExportedVCard = Header() + "\n" + exportVersion(vCard.getvCardVersion()) + "\n" + exportNameString(vCard.getName()) + "\n" + exportFullNameString(vCard.getFullName()) + "\n" + exportOrganization(vCard.getOrganization()) + "\n"
                 + exportTitle(vCard.getTitle()) + "\n" + exportPhoto(vCard.getPhoto()) + "\n" + exportOfficeTelephone(vCard.getOfficeTelephone()) + "\n"
                 + exportHomeTelephone(vCard.getHomeTelephone()) + "\n" + exportAddress(vCard.getAddress()) + "\n" + exportEmail(vCard.getEmail()) + "\n" +
-                exportRev(vCard.getRev());
+                exportRev(vCard.getRev()) + Footer();
 
 
         return ExportedVCard;

@@ -34,9 +34,7 @@ public class UserServiceImpl implements UserService{
         userDao.saveUser(user);
     }
 
-
-
-    public User Authenticate(LoginCmd loginCmd) {
+    public User authenticate(LoginCmd loginCmd) {
 
         List<User> users = userDao.getUsers();
         for (User user : users) {
@@ -44,8 +42,6 @@ public class UserServiceImpl implements UserService{
             if (user.getUserName().equals(loginCmd.getUserName()) && user.getPassword().equals(loginCmd.getPassword())) {
                 return user;
             }
-
-
         }
         return null;
     }

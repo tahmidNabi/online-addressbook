@@ -20,7 +20,7 @@ public interface UserService {
 
     public void saveUser(RegistrationCmd registrationCmd);
 
-    public User Authenticate(LoginCmd loginCmd);
+    public User authenticate(LoginCmd loginCmd);
 
     public List<User> getUsers();
 
