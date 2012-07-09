@@ -7,12 +7,12 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/7/12
  * Time: 12:41 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class RegistrationValidator implements Validator {
 
     public boolean supports(Class<?> aClass) {

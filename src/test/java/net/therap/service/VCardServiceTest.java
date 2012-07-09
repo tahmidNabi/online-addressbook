@@ -20,12 +20,12 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/27/12
  * Time: 1:33 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class VCardServiceTest extends UnitilsTestNG{
 
     @TestedObject
@@ -61,10 +61,6 @@ public class VCardServiceTest extends UnitilsTestNG{
         List<VCard> results = vCardService.getVCardsByName(searchCmd,user);
 
         Assert.assertEquals(2,results.size());
-
-
-
-
     }
 
 }

@@ -12,12 +12,12 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 12:17 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class VCardDaoImpl extends HibernateDaoSupport implements VCardDao{
      protected final Logger logger = Logger.getLogger(this.getClass());
 

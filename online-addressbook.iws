@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/net/therap/controller/DownloadVCardController.java" line="19" mnemonic="6" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/net/therap/controller/DownloadVCardController.java" line="20" mnemonic="6" />
   </component>
   <component name="CCaseConfig">
     <option name="checkoutReserved" value="false" />
@@ -209,91 +209,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VersionFourVCardExporter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/utility/VersionFourVCardExporter.java">
+      <file leaf-file-name="AddressBookController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/AddressBookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="27" selection-start="2426" selection-end="2426" vertical-scroll-proportion="-23.64">
+            <state line="41" column="41" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.60240966">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VersionFourVCardImporter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/utility/VersionFourVCardImporter.java">
+      <file leaf-file-name="ImportVCardController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/ImportVCardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="3599" selection-end="3599" vertical-scroll-proportion="-25.28">
+            <state line="41" column="66" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="DownloadVCardController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/DownloadVCardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="264" column="105" selection-start="7982" selection-end="7982" vertical-scroll-proportion="0.0">
+            <state line="17" column="13" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImportCmd.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/command/ImportCmd.java">
+      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+            <state line="48" column="55" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginCmd.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/command/LoginCmd.java">
+      <file leaf-file-name="LogoutController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/LogoutController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+            <state line="22" column="8" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationCmd.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/command/RegistrationCmd.java">
+      <file leaf-file-name="NewVCardController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/NewVCardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+            <state line="46" column="67" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchCmd.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/command/SearchCmd.java">
+      <file leaf-file-name="RegistrationController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/RegistrationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+            <state line="20" column="13" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VCardEntryValidator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/validator/VCardEntryValidator.java">
+      <file leaf-file-name="SearchController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+            <state line="45" column="67" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/dao/UserDaoImpl.java">
+      <file leaf-file-name="UpdateVCardController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/UpdateVCardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="35" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+            <state line="21" column="13" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VCardDaoImpl.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/dao/VCardDaoImpl.java">
+      <file leaf-file-name="VCardController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/VCardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="135" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.6787149">
+            <state line="47" column="67" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -318,22 +318,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/service/VCardService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/onlineAddressBook-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/AddNewVCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/validator/VCardEntryValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/AddressBook.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages_en_US.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/UpdateVCard.jsp" />
+        <option value="$PROJECT_DIR$/src/test/java/net/therap/controller/AddressBookControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/therap/controller/LoginControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/therap/controller/SearchControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/therap/dao/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/therap/dao/VCardDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/therap/service/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/therap/service/VCardServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/AddressBookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/ImportVCardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/utility/SessionKeys.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/LogoutController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/dao/VCardDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/service/VCardServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/utility/AbstractVCardExporter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/utility/VersionFourVCardImporter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/utility/VersionFourVCardExporter.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/NewVCardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/VCardController.java" />
       </list>
     </option>
   </component>
@@ -454,6 +454,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -592,36 +596,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-addressbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-addressbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -889,8 +863,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Favorites" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewSettings">
@@ -916,9 +890,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="TestNG.LoginControllerTest">
     <configuration default="true" type="PhpRunConfigurationType" factoryName="PHP">
@@ -949,6 +923,24 @@
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="/usr/bin/flashplayer" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -989,24 +981,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" />
       <option name="MAIN_CLASS_NAME" />
@@ -1024,14 +998,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1058,6 +1024,14 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1175,12 +1149,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25814334" sideWeight="0.6711004" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25814334" sideWeight="0.67191285" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.998374" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1262,116 +1236,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/therap/controller/SearchControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="366" selection-end="366" vertical-scroll-proportion="-6.6">
+        <state line="25" column="0" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/service/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/therap/dao/UserDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="448" selection-end="448" vertical-scroll-proportion="-2.64">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/service/VCardServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="0" selection-start="2657" selection-end="2657" vertical-scroll-proportion="-12.76">
+        <state line="22" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/utility/AbstractVCardExporter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/therap/dao/VCardDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="52" selection-start="1706" selection-end="1706" vertical-scroll-proportion="-21.24">
+        <state line="22" column="6" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/utility/VCardImporter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/therap/service/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="232" selection-end="232" vertical-scroll-proportion="-6.6">
+        <state line="17" column="14" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/utility/VCardExporter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/therap/service/VCardServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="231" selection-end="231" vertical-scroll-proportion="-6.6">
+        <state line="63" column="0" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/utility/VersionFourVCardExporter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/utility/SessionKeys.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="27" selection-start="2426" selection-end="2426" vertical-scroll-proportion="-23.64">
+        <state line="11" column="34" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/utility/VersionFourVCardImporter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/VCardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="3599" selection-end="3599" vertical-scroll-proportion="-25.28">
+        <state line="47" column="67" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/UpdateVCardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="105" selection-start="7982" selection-end="7982" vertical-scroll-proportion="0.0">
+        <state line="21" column="13" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/command/ImportCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+        <state line="45" column="67" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/command/LoginCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+        <state line="20" column="13" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/command/RegistrationCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/NewVCardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+        <state line="46" column="67" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/command/SearchCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/LogoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+        <state line="22" column="8" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/validator/VCardEntryValidator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+        <state line="48" column="55" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/dao/UserDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/ImportVCardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="35" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+        <state line="41" column="66" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/dao/VCardDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/DownloadVCardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="135" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.6787149">
+        <state line="17" column="13" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/AddressBookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="41" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.60240966">
           <folding />
         </state>
       </provider>

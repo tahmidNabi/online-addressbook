@@ -11,12 +11,12 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 11:33 AM
- * To change this template use File | Settings | File Templates.
  */
+
 public class UserServiceImpl implements UserService{
 
     private UserDao userDao;

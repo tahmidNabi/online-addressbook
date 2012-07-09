@@ -10,12 +10,12 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * user: tahmid
  * Date: 6/7/12
  * Time: 4:32 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class LoginFilter implements Filter {
     protected final Logger logger = Logger.getLogger(this.getClass());
 

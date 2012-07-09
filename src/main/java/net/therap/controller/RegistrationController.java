@@ -12,12 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.rmi.registry.Registry;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 11:39 AM
- * To change this template use File | Settings | File Templates.
  */
+
 public class RegistrationController extends SimpleFormController{
 
     private UserService userService;

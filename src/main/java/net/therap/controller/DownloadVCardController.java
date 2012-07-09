@@ -8,12 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 5:12 PM
- * To change this template use File | Settings | File Templates.
  */
+
+
 public class DownloadVCardController extends AbstractController{
 
     @Override

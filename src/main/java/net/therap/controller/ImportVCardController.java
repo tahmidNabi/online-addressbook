@@ -3,6 +3,7 @@ package net.therap.controller;
 import net.therap.command.ImportCmd;
 import net.therap.domain.User;
 import net.therap.service.VCardService;
+import net.therap.utility.SessionKeys;
 import org.springframework.validation.BindException;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.SimpleFormController;
@@ -17,8 +18,8 @@ import javax.servlet.http.HttpSession;
  * User: tahmid
  * Date: 6/26/12
  * Time: 7:01 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class ImportVCardController extends SimpleFormController{
 
     private VCardService vCardService;
@@ -38,7 +39,7 @@ public class ImportVCardController extends SimpleFormController{
         ImportCmd importCmd = (ImportCmd) command;
 
         HttpSession session = request.getSession();
-        User user = (User)session.getAttribute("User");
+        User user = (User)session.getAttribute(SessionKeys.userKey);
 
         vCardService.importVCard(user, importCmd);
 

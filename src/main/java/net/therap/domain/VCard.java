@@ -4,11 +4,10 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 10:57 AM
- * To change this template use File | Settings | File Templates.
  */
 
 @Entity
@@ -27,14 +26,14 @@ public class VCard {
     private String address;
     private String email;
     private Date rev;
-    private float vCardVersion;
+    private String vCardVersion;
     private int version;
 
     @Id
     @SequenceGenerator(name = "T_ADDRESS_VCARD", sequenceName = "T_ADDRESS_VCARD")
         @GeneratedValue(strategy = GenerationType.AUTO, generator = "T_ADDRESS_VCARD")
 
-    @Column(name = "V_CARD_ID")
+    @Column(name = "VCARD_ID")
     public int getvCardId() {
         return vCardId;
     }
@@ -53,7 +52,7 @@ public class VCard {
         this.owningUser = owningUser;
     }
 
-    @Column(name = "V_NAME")
+    @Column(name = "NAME")
     public String getName() {
         return name;
     }
@@ -62,7 +61,7 @@ public class VCard {
         this.name = name;
     }
 
-    @Column(name = "V_FULLNAME")
+    @Column(name = "FULLNAME")
     public String getFullName() {
         return fullName;
     }
@@ -71,7 +70,7 @@ public class VCard {
         this.fullName = fullName;
     }
 
-    @Column(name = "V_ORG")
+    @Column(name = "ORG")
     public String getOrganization() {
         return organization;
     }
@@ -80,7 +79,7 @@ public class VCard {
         this.organization = organization;
     }
 
-    @Column(name = "V_TITLE")
+    @Column(name = "TITLE")
     public String getTitle() {
         return title;
     }
@@ -89,7 +88,7 @@ public class VCard {
         this.title = title;
     }
 
-    @Column(name = "V_PHOTO")
+    @Column(name = "PHOTO")
     public String getPhoto() {
         return photo;
     }
@@ -98,7 +97,7 @@ public class VCard {
         this.photo = photo;
     }
 
-    @Column(name = "V_TEL_HOME")
+    @Column(name = "TEL_HOME")
     public String getHomeTelephone() {
         return homeTelephone;
     }
@@ -107,7 +106,7 @@ public class VCard {
         this.homeTelephone = homeTelephone;
     }
 
-    @Column(name = "V_TEL_OFFICE")
+    @Column(name = "TEL_OFFICE")
     public String getOfficeTelephone() {
         return officeTelephone;
     }
@@ -116,7 +115,7 @@ public class VCard {
         this.officeTelephone = officeTelephone;
     }
 
-    @Column(name = "V_ADDRESS")
+    @Column(name = "ADDRESS")
     public String getAddress() {
         return address;
     }
@@ -125,7 +124,7 @@ public class VCard {
         this.address = address;
     }
 
-    @Column(name = "V_EMAIL")
+    @Column(name = "EMAIL")
     public String getEmail() {
         return email;
     }
@@ -135,7 +134,7 @@ public class VCard {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "V_REV")
+    @Column(name = "REV")
     public Date getRev() {
         return rev;
     }
@@ -156,11 +155,11 @@ public class VCard {
     }
 
     @Column(name = "VCARD_VERSION")
-    public float getvCardVersion() {
+    public String getvCardVersion() {
         return vCardVersion;
     }
 
-    public void setvCardVersion(float vCardVersion) {
+    public void setvCardVersion(String vCardVersion) {
         this.vCardVersion = vCardVersion;
     }
 }

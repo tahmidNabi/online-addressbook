@@ -3,6 +3,7 @@ package net.therap.controller;
 import net.therap.command.LoginCmd;
 import net.therap.domain.User;
 import net.therap.service.UserService;
+import net.therap.utility.SessionKeys;
 import org.springframework.validation.BindException;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.SimpleFormController;
@@ -13,12 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by IntelliJ IDEA.
- * user: Tahmid
+ * Created by
+ * user: tahmid
  * Date: 6/7/12
  * Time: 3:19 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class LoginController extends SimpleFormController {
 
     private UserService userService;
@@ -42,10 +43,10 @@ public class LoginController extends SimpleFormController {
 
         if (user != null) {
             HttpSession session = request.getSession();
-            session.setAttribute("User", user);
+            session.setAttribute(SessionKeys.userKey, user);
         } else {
             HttpSession session = request.getSession();
-            session.setAttribute("message", "Please put correct Username/Password");
+            session.setAttribute(SessionKeys.messageKey, "Please put correct Username/Password");
             return new ModelAndView(new RedirectView("/online-addressbook/Login.html"));
         }
         return new ModelAndView("Welcome");

@@ -3,6 +3,7 @@ package net.therap.controller;
 import net.therap.domain.User;
 import net.therap.domain.VCard;
 import net.therap.service.VCardService;
+import net.therap.utility.SessionKeys;
 import org.springframework.validation.BindException;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.SimpleFormController;
@@ -13,12 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 12:15 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class NewVCardController extends SimpleFormController{
 
     private VCardService vCardService;
@@ -43,7 +44,7 @@ public class NewVCardController extends SimpleFormController{
 
         HttpSession session = request.getSession();
 
-        User user = (User) session.getAttribute("User");
+        User user = (User) session.getAttribute(SessionKeys.userKey);
 
         vCardService.addNewVCard(user, vCard);
 

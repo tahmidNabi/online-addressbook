@@ -4,6 +4,7 @@ import net.therap.command.SearchCmd;
 import net.therap.domain.User;
 import net.therap.domain.VCard;
 import net.therap.service.VCardService;
+import net.therap.utility.SessionKeys;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindException;
 import org.springframework.web.servlet.ModelAndView;
@@ -16,12 +17,12 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 5:35 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class SearchController extends SimpleFormController{
 
     private VCardService vCardService;
@@ -42,7 +43,7 @@ public class SearchController extends SimpleFormController{
 
 
         HttpSession session = request.getSession();
-        User user = (User) session.getAttribute("User");
+        User user = (User) session.getAttribute(SessionKeys.userKey);
 
         List<VCard> vCards = vCardService.getVCardsByName(searchCmd,user);
 

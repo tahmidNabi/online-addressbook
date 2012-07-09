@@ -15,12 +15,12 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 12:21 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class VCardServiceImpl implements VCardService {
 
     protected final Logger logger = Logger.getLogger(this.getClass());
@@ -50,7 +50,7 @@ public class VCardServiceImpl implements VCardService {
 
         vCard.setOwningUser(user);
         vCard.setRev(new Date());
-        vCard.setvCardVersion(4.0f);
+        vCard.setvCardVersion("4.0");
         vCardDao.addNewVCard(vCard);
     }
 
@@ -117,7 +117,7 @@ public class VCardServiceImpl implements VCardService {
 
         vCard.setRev(new Date());
 
-        vCard.setvCardVersion(4.0f);
+        vCard.setvCardVersion("4.0");
 
         vCardDao.addNewVCard(vCard);
 

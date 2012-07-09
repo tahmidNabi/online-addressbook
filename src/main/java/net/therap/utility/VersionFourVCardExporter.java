@@ -3,12 +3,12 @@ package net.therap.utility;
 import java.util.Date;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 4:28 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class VersionFourVCardExporter extends AbstractVCardExporter{
 
     @Override
@@ -80,7 +80,7 @@ public class VersionFourVCardExporter extends AbstractVCardExporter{
     }
 
     @Override
-    public String exportVersion(float version) {
+    public String exportVersion(String version) {
         return "VERSION:"+version;
     }
 

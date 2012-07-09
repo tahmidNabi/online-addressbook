@@ -11,8 +11,8 @@ import org.springframework.validation.Validator;
  * User: tahmid
  * Date: 6/7/12
  * Time: 3:16 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class LoginValidator implements Validator {
 
     public boolean supports(Class<?> aClass) {

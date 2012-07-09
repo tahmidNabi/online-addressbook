@@ -5,17 +5,17 @@ import net.therap.domain.VCard;
 import java.util.Date;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 4:10 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public abstract class AbstractVCardExporter implements VCardExporter{
 
     public abstract String Header();
 
-    public abstract String exportVersion(float version);
+    public abstract String exportVersion(String version);
 
     public abstract String exportNameString(String name);
 

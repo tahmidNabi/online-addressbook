@@ -4,8 +4,8 @@
     <t_address_book_user user_id="1" user_name="ayon"  password="123" version="1"/>
 
 
-    <t_address_book_vcard user_id="1" v_card_id="1" version="2" vcard_version="4.0" v_name="tahmid" v_org="therap" v_title="trainee" v_photo="photo.jpg" v_tel_home="111" v_tel_office="11111" v_address="uttara" v_rev="2012-02-12" v_fullname="tahmid-un-nabi"/>
-    <t_address_book_vcard user_id="1" v_card_id="2" version="1" vcard_version="4.0" v_name="pritom" v_org="therap" v_title="trainee" v_photo="photo.jpg" v_tel_home="111" v_tel_office="11111" v_address="jigatola" v_rev="2012-04-12" v_fullname="pritom ahmed"/>
+    <t_address_book_vcard user_id="1" vcard_id="1" version="2" vcard_version="4.0" name="tahmid" org="therap" title="trainee" photo="photo.jpg" tel_home="111" tel_office="11111" address="uttara" rev="2012-02-12" fullname="tahmid-un-nabi"/>
+    <t_address_book_vcard user_id="1" vcard_id="2" version="1" vcard_version="4.0" name="pritom" org="therap" title="trainee" photo="photo.jpg" tel_home="111" tel_office="11111" address="jigatola" rev="2012-04-12" fullname="pritom ahmed"/>
 
 
 </dataset>

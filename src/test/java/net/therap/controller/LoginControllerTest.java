@@ -14,12 +14,12 @@ import org.unitils.inject.annotation.TestedObject;
 import org.unitils.mock.Mock;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/27/12
  * Time: 1:22 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class LoginControllerTest extends UnitilsTestNG {
 
     @TestedObject

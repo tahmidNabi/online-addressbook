@@ -1,12 +1,12 @@
 package net.therap.command;
 
 /**
- * Created by IntelliJ IDEA.
+ * Created by
  * User: tahmid
  * Date: 6/26/12
  * Time: 5:41 PM
- * To change this template use File | Settings | File Templates.
  */
+
 public class SearchCmd {
 
     private String name;
